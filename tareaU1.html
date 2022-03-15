@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onclick="eric()">
+    
+
+    <div class="contenedor">
+        <div class="caja 1" style="border: solid rgb(0, 162, 255) 3px" onclick="cambiarFondo ('blue')">1 </div>
+        <div class="caja 2" style="border: solid rgb(255, 72, 0) 3px" onclick="cambiarFondo ('green')"> 2</div>
+        <div class="caja 3" style="border: solid rgb(62, 14, 151) 3px" onclick="cambiarFondo ('red')">3</div>
+
+    </div>
+
+
+    <style>
+        .contenedor {
+            background-color: rgb(0, 255, 34);
+            display: flex;
+        }
+
+        .caja {
+            width: 200px;
+            height: 200px;
+            font-size: 40px;
+        }
+
+        .caja1 {
+            background-color: blue;
+        }
+
+        .caja2 {
+            background-color: azure;
+        }
+        .caja3 {
+        background-color: rgb(18, 114, 82);
+        }
+    </style>
+
+
+
+    <script>
+function cambiarFondo (color){
+    document.querySelector ("body") .style.background=color
+}
+    </script>
+</body>
+
+</html>
